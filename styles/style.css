@@ -1,0 +1,17 @@
+table td{
+	background-color: #fff321;
+	border:1px solid #060421;
+	padding: 3px;
+	text-align: center;
+}
+table{
+	border:1px solid #060421;	
+}
+caption{
+	font-weight: bold;
+	font-size: 25px;
+	text-align:center;
+}
+#presen{
+	display: none;
+}

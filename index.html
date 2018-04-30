@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+        <span>Продукты:</span>
+        <select id="lstProducts">
+          <optgroup label="Овощи">
+            <option selected value="23">Картошка</option>
+            <option value="32">Морковь</option>
+            <option value="30">Лук</option>
+          </optgroup>
+          <optgroup label="Фрукты">
+            <option value="65">Яблоки</option>
+            <option value="50">Бананы</option>
+          </optgroup>
+          <optgroup label="Напитки">
+            <option value="50">Чай</option>
+            <option value="70">Кофе</option>
+          </optgroup>
+        </select>
+        <span>Количество:</span>
+        <input type="text" id="txtQty" style="width: 60px;">
+        <input type="button" onclick="add()" name="button" value="Добавить">
+        <input type="button" onclick="present()" value="Добавить бонус!" id="presen">
+        <table id="tblOrder" >
+          <caption>Ваш заказ</caption>
+          <thead>
+            <tr>
+              <td><input type="checkbox" onclick="ToggleCheck(this)"></td>
+              <td>Продукт</td>
+              <td>Цена</td>
+              <td>Количество</td>
+              <td>Сумма</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td>Итог:</td>
+              <td></td>
+              <td ></td>
+              <td id="result"></td>
+              <td><input type="button" value="Удалить отмеченные" onclick="removeSelected()"></td>
+            </tr>
+          </tfoot>
+        </table>
+     <script src="js/script2.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script> 
+  </body>
+</html>
